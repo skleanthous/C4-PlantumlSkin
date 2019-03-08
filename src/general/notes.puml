@@ -1,0 +1,9 @@
+!include_many colors.puml
+
+' Notes
+' ##################################
+skinparam note {
+  BackgroundColor EXPENDED_SYSTEM_BACKGROUND_COLOR
+  BorderColor EXTERNAL_BORDER_COLOR
+  FontColor ATTRIBUTE_AND_EXPANDED_SYSTEM_COLOR
+}

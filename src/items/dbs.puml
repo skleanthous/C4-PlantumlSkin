@@ -1,0 +1,15 @@
+!include_many ../general/colors.puml
+
+' Db's
+' ##################################
+skinparam database<<Internal>> {
+  BackgroundColor SYSTEM_BG_COLOR
+  BorderColor INTERNAL_BORDER_COLOR
+  FontColor FONT_COLOR
+}
+
+skinparam database<<External>> {
+  BackgroundColor EXTERNAL_SYSTEM_BG_COLOR
+  BorderColor EXTERNAL_BORDER_COLOR
+  FontColor FONT_COLOR
+}

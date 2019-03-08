@@ -1,0 +1,15 @@
+!include_many ../general/colors.puml
+
+' Systems
+' ##################################
+skinparam rectangle<<External System>> {
+  FontColor FONT_COLOR
+  BorderColor EXTERNAL_BORDER_COLOR
+  BackgroundColor EXTERNAL_SYSTEM_BG_COLOR
+}
+
+skinparam rectangle<<Internal System>> {
+  FontColor FONT_COLOR
+  BorderColor INTERNAL_BORDER_COLOR
+  BackgroundColor SYSTEM_BG_COLOR
+}

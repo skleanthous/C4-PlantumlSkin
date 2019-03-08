@@ -1,0 +1,13 @@
+!include_many ../general/colors.puml
+
+' Actors
+' ##################################
+skinparam actor<<Internal User>> {
+  BorderColor GENERAL_BORDER_COLOR
+  BackgroundColor PERSON_BG_COLOR
+}
+
+skinparam actor<<External User>> {
+  BorderColor GENERAL_BORDER_COLOR
+  BackgroundColor EXTERNAL_PERSON_BG_COLOR
+}
