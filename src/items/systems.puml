@@ -15,3 +15,16 @@ skinparam rectangle<<Internal System>> {
   BorderColor INTERNAL_BORDER_COLOR
   BackgroundColor SYSTEM_BG_COLOR
 }
+
+skinparam rectangle<<External Component>> {
+  FontColor FONT_COLOR
+  BorderColor EXTERNAL_BORDER_COLOR
+  BackgroundColor EXTERNAL_SYSTEM_BG_COLOR
+}
+
+skinparam rectangle<<Internal Component>> {
+  FontColor FONT_COLOR
+  BorderColor INTERNAL_BORDER_COLOR
+  BackgroundColor SYSTEM_BG_COLOR
+}
+

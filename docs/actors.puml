@@ -1,0 +1,15 @@
+@startuml
+!define NO_LEGEND
+
+!include ../src/c4.puml
+
+actor Internal <<Internal>>
+actor External <<External>>
+actor InternalPerson <<Internal Person>>
+actor ExternalPerson <<External Person>>
+
+External -down-> Internal
+Internal -right-> ExternalPerson
+ExternalPerson -up-> InternalPerson
+
+@end

@@ -1,0 +1,11 @@
+@startuml
+!define NO_LEGEND
+
+!include ../src/c4.puml
+
+component Internal <<Internal Container>>
+component External <<External Container>>
+
+Internal -right-> External
+
+@end

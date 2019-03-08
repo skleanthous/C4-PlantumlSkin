@@ -4,12 +4,22 @@
 
 ' Actors
 ' ##################################
-skinparam actor<<Internal User>> {
+skinparam actor<<Internal>> {
   BorderColor GENERAL_BORDER_COLOR
   BackgroundColor PERSON_BG_COLOR
 }
 
-skinparam actor<<External User>> {
+skinparam actor<<External>> {
+  BorderColor GENERAL_BORDER_COLOR
+  BackgroundColor EXTERNAL_PERSON_BG_COLOR
+}
+
+skinparam actor<<Internal Person>> {
+  BorderColor GENERAL_BORDER_COLOR
+  BackgroundColor PERSON_BG_COLOR
+}
+
+skinparam actor<<External Person>> {
   BorderColor GENERAL_BORDER_COLOR
   BackgroundColor EXTERNAL_PERSON_BG_COLOR
 }

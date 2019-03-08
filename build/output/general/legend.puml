@@ -1,10 +1,11 @@
 !ifndef COLORS_IMPORTED
 !includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/general/colors.puml
+!includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/general/general.puml
 !endif
 
 ' Legend
 ' ##################################
-hide stereotype
+!ifndef NO_LEGEND
 legend right
 |= Color                      |= Type |
 |<PERSON_BG_COLOR>            | person |
@@ -13,3 +14,10 @@ legend right
 |<EXTERNAL_SYSTEM_BG_COLOR>   | external system |
 |<CONTAINER_BG_COLOR>         | container |
 endlegend
+!endif
+
+!ifdef NO_LEGEND
+!ifndef ENABLE_STEREOTYPES
+hide stereotype
+!endif
+!endif
