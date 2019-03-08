@@ -1,16 +1,16 @@
 !ifndef COLORS_IMPORTED
-!include ../general/colors.puml
+!includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/general/colors.puml
 !endif
 
-' Queues
+' Db's
 ' ##################################
-skinparam queue<<Internal>> {
+skinparam database<<Internal>> {
   BackgroundColor SYSTEM_BG_COLOR
   BorderColor INTERNAL_BORDER_COLOR
   FontColor FONT_COLOR
 }
 
-skinparam queue<<External>> {
+skinparam database<<External>> {
   BackgroundColor EXTERNAL_SYSTEM_BG_COLOR
   BorderColor EXTERNAL_BORDER_COLOR
   FontColor FONT_COLOR

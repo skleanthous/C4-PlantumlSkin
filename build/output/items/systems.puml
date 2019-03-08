@@ -1,5 +1,5 @@
 !ifndef COLORS_IMPORTED
-!include ../general/colors.puml
+!includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/general/colors.puml
 !endif
 
 ' Systems

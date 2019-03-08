@@ -1,4 +1,6 @@
-!include_many ../general/colors.puml
+!ifndef COLORS_IMPORTED
+!include ../general/colors.puml
+!endif
 
 ' Components
 ' ##################################

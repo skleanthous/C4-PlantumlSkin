@@ -1,5 +1,5 @@
 @startuml
-!include ../src/c4.puml
+!includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/c4.puml
 
 title Software System - System Context
 caption An example of a System Context diagram.
