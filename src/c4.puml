@@ -4,6 +4,7 @@
 
 !include /items/actors.puml
 !include /items/components.puml
+!include /items/containers.puml
 !include /items/dbs.puml
 !include /items/expanded.puml
 !include /items/queues.puml

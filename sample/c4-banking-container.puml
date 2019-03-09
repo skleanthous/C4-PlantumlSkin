@@ -1,0 +1,38 @@
+@startuml
+!include ../src/c4.puml
+
+title Banking system
+caption This is the Banking Container example taken from https://c4model.com/
+
+actor customer <<Internal Person>>
+
+Rectangle mainframe_system <<External System>>
+Rectangle email_system <<External System>>
+
+frame internent_banking <<Expanded Container>> {
+    component web_application <<Internal Container>>
+    component sp_application <<Internal Container>>
+    component mobile_application <<Internal Container>>
+
+    database database <<Internal Database>>
+    component api <<Internal Container>>
+}
+
+web_application -[hidden]right-> sp_application
+sp_application -[hidden]right-> mobile_application
+web_application -[hidden]down-> database
+
+customer ..> web_application : Use\n[Https]
+customer ..> sp_application : Uses
+customer ..> mobile_application : Uses
+
+api .right.> mainframe_system : Uses\n[XML\HTTPS]
+api .left.> database : Reads from\nand writes to\n[JDBC]
+
+api .up.> email_system : Send email\nusing\n[SMTP]
+email_system .up.> customer : Send email
+
+sp_application .down.> api : Uses\n[JSON/HTTPS]
+mobile_application .down.> api : Uses\n[JSON/HTTPS]
+
+@enduml

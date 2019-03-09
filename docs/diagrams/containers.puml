@@ -1,0 +1,16 @@
+@startuml
+!define NO_LEGEND
+
+!include ../../src/c4.puml
+
+component Internal <<Internal Container>>
+component External <<External Container>>
+
+rectangle InternalRectangle <<Internal Container>>
+rectangle ExternalRectangle <<External Container>>
+
+Internal -right-> External
+Internal -[hidden]down-> InternalRectangle
+InternalRectangle -right-> ExternalRectangle
+
+@enduml

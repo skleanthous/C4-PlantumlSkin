@@ -4,20 +4,20 @@
 
 ' Expanded
 ' ##################################
-skinparam rectangle<<Expanded Container>> {
+skinparam rectangle<<Expanded>> {
   FontColor ATTRIBUTE_AND_EXPANDED_SYSTEM_COLOR
   BorderColor EXTERNAL_BORDER_COLOR
   BackgroundColor EXPENDED_SYSTEM_BACKGROUND_COLOR
   BorderStyle dashed
 }
 
-skinparam frame<<Expanded Container>> {
+skinparam frame<<Expanded>> {
   FontColor ATTRIBUTE_AND_EXPANDED_SYSTEM_COLOR
   BorderColor EXTERNAL_BORDER_COLOR
   BackgroundColor EXPENDED_SYSTEM_BACKGROUND_COLOR
 }
 
-skinparam component<<Expanded Container>> {
+skinparam component<<Expanded>> {
   FontColor ATTRIBUTE_AND_EXPANDED_SYSTEM_COLOR
   BorderColor EXTERNAL_BORDER_COLOR
   BackgroundColor EXPENDED_SYSTEM_BACKGROUND_COLOR

@@ -4,6 +4,7 @@
 
 !includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/items/actors.puml
 !includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/items/components.puml
+!includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/items/containers.puml
 !includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/items/dbs.puml
 !includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/items/expanded.puml
 !includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/items/queues.puml

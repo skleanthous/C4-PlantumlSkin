@@ -61,7 +61,7 @@ All that is needed to start is to add the following line:
 
     As mentioned above, the way that you would skin your artifacts is through the use of stereotyping. Due to this, currently stereotype names are not emitted, but instead, a legend is emited on the bottom right. At this time it cannot be turned off.
 
-1. ### PlantUml Actors <--> C4 Person
+1. ### C4 Person <--> PlantUml Actors
 
     There is support for two types of actors. Internal and external actors. The supported stereotypes are:
     - `<<Internal>>`
@@ -81,15 +81,27 @@ All that is needed to start is to add the following line:
     actor ExternalPerson <<External Person>>
 
     External -down-> Internal
-    Internal -right-> ExternalPerson
-    ExternalPerson -up-> InternalPerson
+    Internal -right-> InternalPerson
+    InternalPerson -up-> ExternalPerson
 
     @end
     ```
 
     Produces this outcome:
 
-    ![Actors](./docs/actors.png)
+    ![Actors](./docs/diagrams/actors.png)
+
+1. ### C4 Systems <---> PlantUml Rectangles and Frames
+
+    C4 Systems can be reprensented using PlantUml rectangles and frames. In both cases the stereotype that should be used are:
+
+    - `<<Internal System>>`
+    - `<<System>>` an alias to `<<Internal System>>`
+    - `<<External System>>`
+
+    The following code:
+
+    ```
 
 1. ### PlantUml Components <--> C4 Containers
 
@@ -98,7 +110,6 @@ All that is needed to start is to add the following line:
     - `<<Internal Container>>`
     - `<<External Container>>`
 
-    
     The following code:
 
     ```plantumlcode
@@ -117,18 +128,18 @@ All that is needed to start is to add the following line:
 
     Produces this outcome:
 
-    ![Containers](./docs/containers.png)
+    ![Containers](./docs/diagrams/containers.png)
 
-2. ## PlantUml Rectangles <--> C4 Systems and C4 Components
+2. ## PlantUml Rectangles <--> C4 Systems and Components
 
     PlantUml rectangles can represent C4 systems and components. The supported stereotypes are:
 
     - `<<Internal System>>`
-    - `<<Internal Component>>`
     - `<<External System>>`
+    - `<<Internal Component>>`
     - `<<External Component>>`
 
-    Systems and Components render the same way (as rectangles) skinned only to render correctly according to whether they are internal or external.
+    Systems and Components render the same way (as rectangles). Internal systems and components have a slightly different background color to be easir to read.
 
     The following code:
 
@@ -138,21 +149,39 @@ All that is needed to start is to add the following line:
 
     !includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/c4.puml
 
-    rectangle InternalSystem <<Internal System>>
-    rectangle ExternalSystem <<External System>>
-    rectangle InternalComponent <<Internal Component>>
-    rectangle ExternalComponent <<External Component>>
+    rectangle Internal <<Internal System>>
+    rectangle External <<External System>>
 
-    InternalSystem -down-> ExternalSystem
-    ExternalSystem -right-> InternalComponent
-    InternalComponent -up-> ExternalComponent
-
-    @end
+    Internal --> External
+    @enduml
     ```
 
     Produces this outcome:
 
-    ![Systems and Components](./docs/systems-and-components.png)
+    ![Systems](./docs/diagrams/systems.png)
+
+    While this plantuml code:
+
+    ```plantumlcode
+    @startuml
+    !define NO_LEGEND
+
+    !includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/c4.puml
+
+    rectangle Internal <<Internal Component>>
+    rectangle External <<External Component>>
+
+    Internal --> External
+    @enduml
+    ```
+
+    Produces this outcome:
+
+    ![Components](./docs/diagrams/components.png)
+
+3. ### More details
+
+    For more details, please [visit the docs](./docs/readme.md)
 
 ## Inspiration \ Acknowledgements
 ---

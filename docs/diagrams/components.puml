@@ -1,0 +1,11 @@
+@startuml
+!define NO_LEGEND
+
+!include ../../src/c4.puml
+
+rectangle Internal <<Internal Component>>
+rectangle External <<External Component>>
+
+Internal --> External
+
+@enduml

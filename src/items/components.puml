@@ -4,14 +4,15 @@
 
 ' Components
 ' ##################################
-skinparam component<<External Container>> {
-  FontColor FONT_COLOR
+skinparam rectangle<<External Component>> {
+  FontColor EXTERNAL_COMPONENT_FONT_COLOR
   BorderColor EXTERNAL_BORDER_COLOR
-  BackgroundColor EXTERNAL_SYSTEM_BG_COLOR
+  BackgroundColor EXTERNAL_COMPONENT_BG_COLOR
 }
 
-skinparam component<<Internal Container>> {
-  FontColor FONT_COLOR
+skinparam rectangle<<Internal Component>> {
+  FontColor COMPONENT_FONT_COLOR
   BorderColor INTERNAL_BORDER_COLOR
-  BackgroundColor SYSTEM_BG_COLOR
+  BackgroundColor COMPONENT_BG_COLOR
 }
+

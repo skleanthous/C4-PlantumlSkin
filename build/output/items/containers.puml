@@ -1,0 +1,29 @@
+!ifndef COLORS_IMPORTED
+!includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/general/colors.puml
+!endif
+
+' Components
+' ##################################
+skinparam component<<External Container>> {
+  FontColor CONTAINER_FONT_COLOR
+  BorderColor EXTERNAL_CONTAINER_BORDER_COLOR
+  BackgroundColor EXTERNAL_CONTAINER_BG_COLOR
+}
+
+skinparam component<<Internal Container>> {
+  FontColor CONTAINER_FONT_COLOR
+  BorderColor CONTAINER_BORDER_COLOR
+  BackgroundColor CONTAINER_BG_COLOR
+}
+
+skinparam rectangle<<External Container>> {
+  FontColor CONTAINER_FONT_COLOR
+  BorderColor EXTERNAL_CONTAINER_BORDER_COLOR
+  BackgroundColor EXTERNAL_CONTAINER_BG_COLOR
+}
+
+skinparam rectangle<<Internal Container>> {
+  FontColor CONTAINER_FONT_COLOR
+  BorderColor CONTAINER_BORDER_COLOR
+  BackgroundColor CONTAINER_BG_COLOR
+}

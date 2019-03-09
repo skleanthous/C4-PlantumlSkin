@@ -1,0 +1,15 @@
+@startuml
+!define NO_LEGEND
+
+!include ../../src/c4.puml
+
+rectangle Internal <<Internal System>>
+frame AnotherInternal <<System>>
+rectangle External <<External System>>
+frame ExternalFrame <<External System>>
+
+Internal -right-> AnotherInternal
+Internal -[hidden]down-> External
+External -right-> ExternalFrame
+
+@enduml
