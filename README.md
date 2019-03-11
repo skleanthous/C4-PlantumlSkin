@@ -30,14 +30,14 @@ Just below `@startuml`, and then use the following components with the specified
 | C4 artifact | PlantUml | Stereotype for internal | Stereotype for external |
 |---|---|---|---|
 | Person | `actor` | `<<Internal>>` | `<<External>>` |
-| System | `frame` | `<<Internal System>>` <br> `<<Internal>>` <br> `<<System>>` | `<<External System>>` <br> `<<External>>` |
-| System | `rectangle` | `<<Internal System>>` <br> `<<System>>` | `<<External System>>` |
-| Containers | `component` | `<<Internal Container>>` <br> `<<Internal>>` <br> `<<Container>>` | `<<External Container>>` <br> `<<External>>` |
-| Containers | `rectangle` | `<<Internal Container>>` <br> `<<Container>>` | `<<External Container>>` |
-| Component | `rectangle` | `<<Internal Component>>` <br> `<<Component>>` | `<<External Component>>` |
-| Database | `database` | `<<Internal Database>>` <br> `<<Internal>>` |  `<<External Database>>` <br> `<<External>>` |
-| Queue | `queue` | `<<Internal Queue>>` <br> `<<Internal>>` |  `<<External Queue>>` <br> `<<Queue>>` |
-| Expanded systems, <br> containers and components | `frame` <br> `component` <br> or `rectangle` <br> according to your need | `<Expanded>` | `<Expanded>` |
+| System | `frame` | `<<Internal System>>`, <br> `<<Internal>>`, <br> or `<<System>>` | `<<External System>>` <br> or `<<External>>` |
+| System | `rectangle` | `<<Internal System>>` <br> or `<<System>>` | `<<External System>>` |
+| Containers | `component` | `<<Internal Container>>`, <br> `<<Internal>>`, <br> or `<<Container>>` | `<<External Container>>` <br> or `<<External>>` |
+| Containers | `rectangle` | `<<Internal Container>>` <br>or `<<Container>>` | `<<External Container>>` |
+| Component | `rectangle` | `<<Internal Component>>` <br> or `<<Component>>` | `<<External Component>>` |
+| Database | `database` | `<<Internal Database>>` <br> or `<<Internal>>` |  `<<External Database>>` <br> or `<<External>>` |
+| Queue | `queue` | `<<Internal Queue>>` <br> or `<<Internal>>` |  `<<External Queue>>` <br> or `<<Queue>>` |
+| Expanded systems, <br> containers and components | `frame`, <br> `component`, <br> or `rectangle` <br> according to your need | `<Expanded>` | `<Expanded>` |
 
 ## Examples
 ---
