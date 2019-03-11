@@ -12,7 +12,8 @@ Before you start, you need to be familiar at minimum with:
 First of all you need to have plantuml up and running. For this you have multiple options (all of which will work with this):
 
 1. [Local installation](http://plantuml.com/starting)
-1. [Free online editor](https://www.planttext.com/)
+1. [Free online editor](http://www.plantuml.com/plantuml/uml/5Oqn3W8X44LxJw47a6csijh42vXu0XOcGdOO2FCdNb-iNbxptcw84zxaSgkQn3Fxb6i1XZs8Plo6JqNnmurdwWfMXDGRsIaS5QMxqNExlsJ9ghpFgjIYWISTNYLJTmm7fIsC_sLdpOi_) <-- This is ready for you to start creating C4 models!!
+1. ~~[Another free online editor](https://www.planttext.com/)~~ Seems to be down at the moment.
 1. [VisualStudio Code Plugin](https://github.com/qjebbs/vscode-plantuml): This plugin allows you to "embed" diagrams in your markdown files, which is the best of all worlds in my opinion, and is hence really recommended.
 
 Once you have something running (or just went to planttext online editor), you can start using plantuml to create text-driven models and diagrams.
@@ -46,12 +47,16 @@ Reproduced (as closely as possible from diagrams from [the official C4 model web
 1. System Context diagram
 
     [PlantUml file for diagram below](./sample/c4-banking-system.puml)
-    
+
+    [Edit this diagram online!](http://www.plantuml.com/plantuml/uml/jP8_Rzim4CLtVefhHgEH5az1OAGDF6G8423PcY0uKsUBCFy8l6FjeEXtxrcIvTG1sYuLj8ZwlSVtUBnXmImbUFF9HUjBGoLxQ4KwlghhZBjguwGjgyAKROf2KIgRGirRJnYbJONhs_dbWyTuS7dSkbW7PA5ShuhpJPsAT4LgEw-wmov6d7Y2hnYLt02_AHgCnKvSYl3KEWPzfJqXZpq2jCVGgL9mIn7MEOKffPs7r93lSvbCLZ1kbAI0ph_o8B--NkurL4G_6YuMyCs0FhFPyl90ZbbcCzClFsa45mV5lRCvSLeBBFUsLNVg4NglCo_QBMr8esVuqVz7Aod3nGDbJcepDNgEjuKb1SeNckikZha6JdCXWns18Skfa-jXajVLu3NfF_OQkjsDWhFZr9OJzCNxj3jjoI09lZlQJO2BwvG3zXF2LIe2Mj9bE6JuF55eRIfH630s47HAqE5R85tfaPVpAW7LDsEWKnUTqP-wt1yL_wlCltVvQSnn2wYQj8lLukDihg0miJbVdmJJ2VnTaTsc5PMylzDACyLcl8Ry70ihQynlJAMYOz8p0KWoD_fTWly5)
+
     ![System Context Fiagram](./sample/c4-banking-system.png)
 
 2. Container diagram
 
     [PlantUml file for diagram below](./sample/c4-banking-container.puml)
+
+    [Edit this diagram online](http://www.plantuml.com/plantuml/uml/bPDHQzim4CVVzIcq3n3xfK-bcD9sq9Lr2qq6WoQKYtsDHQMJa4waO-oxx-mQrtDeMKiVWlZzzB__HJbF396pi-gJeThc1dEqkcKEwRGi8noAlU4sxtB2M7jY92vgxyhqP168MvzJUNcoM5gWxfRLaw7IGMACvIuRsvG-SyXSrYT5w58K6xQeBu24tElqIr2dQWXiFEbrQvAMVsvVaKj91KCODJw32o8pF27fn-ZTE6Xzudo3jXzDAQZPHrtdnDw9TtRsXHWZWTLBZCbJLIbrXpK3xUKw1uOU8pXyU9b6-C_F0x_gJuH_nL5u-nwguiYQFXU97tP3cqu8G0qsLQL_Aor_CdFm7QGFk7k04AofeL_7PF1n2rKrarBukEFypbZy7wyN6s3OGSBnmvI-6iwEGY2OjsxzezIyw-A-DKs3j8rct_AYclLIARoF7rTwEwBn1rfKOnkbngTI59MUQwVwHy8DtLypXxJzbqtX64rJP3hO75FTXeg-W73pPpXG4lppzklcUhrUhhOlXiL74SRn1Rn3Q5B_YzWGKACFqJ0cpLxicwkBo-sGbODuqmSixWf5wCysb9EXlJYhs_LogwRWu8xDffwQVpb5js2X9VErnStg-xTog37kv0FEkUHbP_y2)
 
     ![Container diagram](./sample/c4-banking-container.png)
 
