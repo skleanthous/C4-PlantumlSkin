@@ -1,15 +1,15 @@
 @startuml
 !define NO_LEGEND
 
-!include ../../src/c4.puml
+!includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/c4.puml
 
 rectangle Internal <<Internal System>>
 frame AnotherInternal <<System>>
 rectangle External <<External System>>
-frame ExternalFrame <<External System>>
+frame AnotherExternal <<External System>>
 
-Internal -right-> AnotherInternal
-Internal -[hidden]down-> External
-External -right-> ExternalFrame
+Internal -right-> External
+Internal -[hidden]down-> AnotherInternal
+AnotherInternal -right-> AnotherExternal
 
 @enduml

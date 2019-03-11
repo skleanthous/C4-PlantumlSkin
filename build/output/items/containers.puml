@@ -16,6 +16,12 @@ skinparam component<<Internal Container>> {
   BackgroundColor CONTAINER_BG_COLOR
 }
 
+skinparam component<<Container>> {
+  FontColor CONTAINER_FONT_COLOR
+  BorderColor CONTAINER_BORDER_COLOR
+  BackgroundColor CONTAINER_BG_COLOR
+}
+
 skinparam rectangle<<External Container>> {
   FontColor CONTAINER_FONT_COLOR
   BorderColor EXTERNAL_CONTAINER_BORDER_COLOR
@@ -23,6 +29,12 @@ skinparam rectangle<<External Container>> {
 }
 
 skinparam rectangle<<Internal Container>> {
+  FontColor CONTAINER_FONT_COLOR
+  BorderColor CONTAINER_BORDER_COLOR
+  BackgroundColor CONTAINER_BG_COLOR
+}
+
+skinparam rectangle<<Container>> {
   FontColor CONTAINER_FONT_COLOR
   BorderColor CONTAINER_BORDER_COLOR
   BackgroundColor CONTAINER_BG_COLOR

@@ -1,7 +1,7 @@
 @startuml
 !define NO_LEGEND
 
-!include ../../src/c4.puml
+!includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/c4.puml
 
 actor Internal <<Internal>>
 actor External <<External>>

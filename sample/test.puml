@@ -36,8 +36,8 @@ component testingLongInternal <<Internal Container>> [
   do I do this
 ]
 
-actor "User" <<Internal User>> as 1
-actor "User" <<External User>>
+actor "User" <<Internal Person>> as 1
+actor "User" <<External Person>>
 note right of 1
   A user of my software system.
 end note
