@@ -4,6 +4,7 @@
 
 ' Containers
 ' ##################################
+<<<<<<< HEAD
 
   ' PlantUML Component skinning
     ' Internal
@@ -59,3 +60,40 @@
       BorderColor EXTERNAL_CONTAINER_BORDER_COLOR
       BackgroundColor EXTERNAL_CONTAINER_BG_COLOR
     }
+=======
+skinparam component<<External Container>> {
+  FontColor CONTAINER_FONT_COLOR
+  BorderColor EXTERNAL_CONTAINER_BORDER_COLOR
+  BackgroundColor EXTERNAL_CONTAINER_BG_COLOR
+}
+
+skinparam component<<Internal Container>> {
+  FontColor CONTAINER_FONT_COLOR
+  BorderColor CONTAINER_BORDER_COLOR
+  BackgroundColor CONTAINER_BG_COLOR
+}
+
+skinparam component<<Container>> {
+  FontColor CONTAINER_FONT_COLOR
+  BorderColor CONTAINER_BORDER_COLOR
+  BackgroundColor CONTAINER_BG_COLOR
+}
+
+skinparam rectangle<<External Container>> {
+  FontColor CONTAINER_FONT_COLOR
+  BorderColor EXTERNAL_CONTAINER_BORDER_COLOR
+  BackgroundColor EXTERNAL_CONTAINER_BG_COLOR
+}
+
+skinparam rectangle<<Internal Container>> {
+  FontColor CONTAINER_FONT_COLOR
+  BorderColor CONTAINER_BORDER_COLOR
+  BackgroundColor CONTAINER_BG_COLOR
+}
+
+skinparam rectangle<<Container>> {
+  FontColor CONTAINER_FONT_COLOR
+  BorderColor CONTAINER_BORDER_COLOR
+  BackgroundColor CONTAINER_BG_COLOR
+}
+>>>>>>> 303e13d8c801e466dec054a8cf9068a2d9060aca

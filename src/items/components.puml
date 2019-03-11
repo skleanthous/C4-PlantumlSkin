@@ -16,6 +16,10 @@ skinparam rectangle<<Internal Component>> {
   BackgroundColor COMPONENT_BG_COLOR
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 303e13d8c801e466dec054a8cf9068a2d9060aca
 skinparam rectangle<<Component>> {
   FontColor COMPONENT_FONT_COLOR
   BorderColor INTERNAL_BORDER_COLOR
