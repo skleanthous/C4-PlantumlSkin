@@ -17,6 +17,48 @@ First of all you need to have plantuml up and running. For this you have multipl
 
 Once you have something running (or just went to planttext online editor), you can start using plantuml to create text-driven models and diagrams.
 
+## Quickstart
+---
+
+Assuming that you have an environment that you can use PlantUml, add the following line:
+```plantumlcode
+!includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/c4.puml
+```
+Just below `@startuml`, and then use the following components with the specified stereotype:
+
+| C4 artifact | PlantUml | Stereotype for internal | Stereotype for external |
+|---|---|---|---|
+| Person | `actor` | `<<Internal>>` | `<<External>>` |
+| System | `frame` | `<<Internal System>>` <br> `<<Internal>>` <br> `<<System>>` | `<<External System>>` <br> `<<External>>` |
+| System | `rectangle` | `<<Internal System>>` <br> `<<System>>` | `<<External System>>` |
+| Containers | `component` | `<<Internal Container>>` <br> `<<Internal>>` <br> `<<Container>>` | `<<External Container>>` <br> `<<External>>` |
+| Containers | `rectangle` | `<<Internal Container>>` <br> `<<Container>>` | `<<External Container>>` |
+| Component | `rectangle` | `<<Internal Component>>` <br> `<<Component>>` | `<<External Component>>` |
+| Database | `database` | `<<Internal Database>>` <br> `<<Internal>>` |  `<<External Database>>` <br> `<<External>>` |
+| Queue | `queue` | `<<Internal Queue>>` <br> `<<Internal>>` |  `<<External Queue>>` <br> `<<Queue>>` |
+| Expanded systems, <br> containers and components | `frame` <br> `component` <br> or `rectangle` <br> according to your need | `<Expanded>` | `<Expanded>` |
+
+## Examples
+---
+
+Reproduced (as closely as possible from diagrams from [the official C4 model website](https://c4model.com/))
+
+1. System Context diagram
+
+    [PlantUml file for diagram below](./sample/c4-banking-system.puml)
+    
+    ![System Context Fiagram](./sample/c4-banking-system.png)
+
+2. Container diagram
+
+    [PlantUml file for diagram below](./sample/c4-banking-container.puml)
+
+    ![Container diagram](./sample/c4-banking-container.png)
+
+3. Component diagram
+
+    ## _**!!!TODO!!!**_
+
 ## Brief description
 ---
 
@@ -43,27 +85,6 @@ This tool allows you to use stereotypes to skin your diagram to be close to what
 1. Dynamic diagram
 1. Dynamic diagram
 
-## Examples
----
-
-Reproduced (as closely as possible from diagrams from [the official C4 model website](https://c4model.com/))
-
-1. System Context diagram
-
-    [PlantUml file for diagram below](./sample/c4-banking-system.puml)
-    
-    ![System Context Fiagram](./sample/c4-banking-system.png)
-
-2. Container diagram
-
-    [PlantUml file for diagram below](./sample/c4-banking-container.puml)
-
-    ![Container diagram](./sample/c4-banking-container.png)
-
-3. Component diagram
-
-    ## _**!!!TODO!!!**_
-    
 ## Instructions
 ---
 
