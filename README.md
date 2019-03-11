@@ -43,7 +43,27 @@ This tool allows you to use stereotypes to skin your diagram to be close to what
 1. Dynamic diagram
 1. Dynamic diagram
 
+## Examples
+---
 
+Reproduced (as closely as possible from diagrams from [the official C4 model website](https://c4model.com/))
+
+1. System Context diagram
+
+    [PlantUml file for diagram below](./sample/c4-banking-system.puml)
+    
+    ![System Context Fiagram](./sample/c4-banking-system.png)
+
+2. Container diagram
+
+    [PlantUml file for diagram below](./sample/c4-banking-container.puml)
+
+    ![Container diagram](./sample/c4-banking-container.png)
+
+3. Component diagram
+
+    ## _**!!!TODO!!!**_
+    
 ## Instructions
 ---
 
@@ -61,7 +81,7 @@ All that is needed to start is to add the following line:
 
     As mentioned above, the way that you would skin your artifacts is through the use of stereotyping. Due to this, currently stereotype names are not emitted, but instead, a legend is emited on the bottom right. At this time it cannot be turned off.
 
-1. ### C4 Person <--> PlantUml Actors
+2. ### Represent C4 Person --> with PlantUml Actors
 
     There is support for two types of actors. Internal and external actors. The supported stereotypes are:
     - `<<Internal>>`
@@ -91,55 +111,15 @@ All that is needed to start is to add the following line:
 
     ![Actors](./docs/diagrams/actors.png)
 
-1. ### C4 Systems <---> PlantUml Rectangles and Frames
+3. #### Represent C4 Systems --> with PlantUml Rectangles and Frames
 
-    C4 Systems can be reprensented using PlantUml rectangles and frames. In both cases the stereotype that should be used are:
+    C4 Systems can be reprensented using PlantUml rectangles and frames. In both cases the stereotypes that could be used are:
 
-    - `<<Internal System>>`
-    - `<<System>>` an alias to `<<Internal System>>`
-    - `<<External System>>`
-
-    The following code:
-
-    ```
-
-1. ### PlantUml Components <--> C4 Containers
-
-    PlantUml components can represent containers (and not C4 components which is a bit confusing), which are useful to be shown normally on `System Context`, `Container` and `System Landscape` diagrams. The supported stereotypes are:
-    
-    - `<<Internal Container>>`
-    - `<<External Container>>`
-
-    The following code:
-
-    ```plantumlcode
-    @startuml
-    !define NO_LEGEND
-
-    !includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/c4.puml
-
-    component Internal <<Internal Container>>
-    component External <<External Container>>
-
-    Internal -right-> External
-
-    @end    
-    ```
-
-    Produces this outcome:
-
-    ![Containers](./docs/diagrams/containers.png)
-
-2. ## PlantUml Rectangles <--> C4 Systems and Components
-
-    PlantUml rectangles can represent C4 systems and components. The supported stereotypes are:
+    > **NOTE**: the simplicity of rectangles makes them really useful if you want to avoid the connotations implied by UML artifacts, so they are used to represent other C4 artifacts too
 
     - `<<Internal System>>`
+    - `<<System>>` (an alias to `<<Internal System>>`)
     - `<<External System>>`
-    - `<<Internal Component>>`
-    - `<<External Component>>`
-
-    Systems and Components render the same way (as rectangles). Internal systems and components have a slightly different background color to be easir to read.
 
     The following code:
 
@@ -150,17 +130,63 @@ All that is needed to start is to add the following line:
     !includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/c4.puml
 
     rectangle Internal <<Internal System>>
+    frame AnotherInternal <<System>>
     rectangle External <<External System>>
+    frame AnotherExternal <<External System>>
 
-    Internal --> External
+    Internal -right-> External
+    Internal -[hidden]down-> AnotherInternal
+    AnotherInternal -right-> AnotherExternal
+
+    @enduml
+    ```
+
+    Produces the outcome:
+
+    ![Systems](./docs/diagrams/systems.png)
+
+4. #### Represent C4 Containers --> with PlantUml Rectangle and Components
+
+    C4 containers can be repesented by using plantuml rectangles  (and not C4 components which is a bit confusing), which are useful to be shown normally on `System Context`, `Container` and `System Landscape` diagrams. The supported stereotypes are:
+    
+    - `<<Internal Container>>`
+    - `<<Container>>` (an alias to `Internal Container`)
+    - `<<External Container>>`
+
+    The following code:
+
+    ```plantumlcode
+    @startuml
+    !define NO_LEGEND
+
+    !includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/c4.puml
+
+    component InternalComponent <<Internal Container>>
+    component ExternalComponent <<External Container>>
+
+    rectangle InternalRectangle <<Internal Container>>
+    rectangle ExternalRectangle <<External Container>>
+
+    InternalComponent -right-> ExternalComponent
+    InternalComponent -[hidden]down-> InternalRectangle
+    InternalRectangle -right-> ExternalRectangle
+
     @enduml
     ```
 
     Produces this outcome:
 
-    ![Systems](./docs/diagrams/systems.png)
+    ![Containers](./docs/diagrams/containers.png)
 
-    While this plantuml code:
+5. #### Represent C4 components --> with PlantUml rectangles
+
+    C4 components can currently only be represented by plantuml rectangles. The are only really usesful in `Component` C4 diagrams, but obviously really important. The stereotypes used 
+
+    - `<<Internal Component>>`
+    - `<<Component>>` (an alias to `<<Internal Component>>`)
+    - `<<External Component>>`
+
+    The following code:
 
     ```plantumlcode
     @startuml
@@ -171,7 +197,8 @@ All that is needed to start is to add the following line:
     rectangle Internal <<Internal Component>>
     rectangle External <<External Component>>
 
-    Internal --> External
+    Internal -right-> External
+
     @enduml
     ```
 
@@ -179,9 +206,18 @@ All that is needed to start is to add the following line:
 
     ![Components](./docs/diagrams/components.png)
 
-3. ### More details
+6. #### More details
 
-    For more details, please [visit the docs](./docs/readme.md)
+    The above should be enough to get you started. For more info please see:
+
+    - [Items definitions](./src/items)
+    - [PlantUml files for the sample diagrams](./sample/)
+    - [List of all supported artifacts](./docs/diagrams/)
+
+## work outstanding
+
+1. Complete examples
+1. Add skinning for C4 Code diagrams 
 
 ## Inspiration \ Acknowledgements
 ---

@@ -18,7 +18,7 @@ skinparam database<<Internal Database>> {
 
 skinparam database<<External>> {
   BackgroundColor EXTERNAL_CONTAINER_BG_COLOR
-  BorderColor EXTERNAL_BORDER_COLOR
+  BorderColor EXTERNAL_CONTAINER_BORDER_COLOR
   FontColor CONTAINER_FONT_COLOR
 }
 

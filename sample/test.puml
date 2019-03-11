@@ -4,7 +4,7 @@
 title Software System - System Context
 caption An example of a System Context diagram.
 
-component myFrame<<Expanded Container>> {
+component myFrame <<Expanded>> {
     queue rabbitmq <<Internal>>
     queue rabbitmqa <<External>>
 
@@ -36,8 +36,8 @@ component testingLongInternal <<Internal Container>> [
   do I do this
 ]
 
-actor "User" <<Internal User>> as 1
-actor "User" <<External User>>
+actor "User" <<Internal Person>> as 1
+actor "User" <<External Person>>
 note right of 1
   A user of my software system.
 end note

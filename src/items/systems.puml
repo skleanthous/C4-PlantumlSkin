@@ -4,38 +4,57 @@
 
 ' Systems
 ' ##################################
-skinparam rectangle<<External System>> {
-  FontColor SYSTEM_FONT_COLOR
-  BorderColor EXTERNAL_SYSTEM_BORDER_COLOR
-  BackgroundColor EXTERNAL_SYSTEM_BG_COLOR
-}
 
-skinparam rectangle<<Internal System>> {
-  FontColor SYSTEM_FONT_COLOR
-  BorderColor INTERNAL_BORDER_COLOR
-  BackgroundColor SYSTEM_BG_COLOR
-}
+  ' PlantUML Frame skinning
+    ' Internal
+    skinparam frame<<Internal System>> {
+      FontColor SYSTEM_FONT_COLOR
+      BorderColor INTERNAL_BORDER_COLOR
+      BackgroundColor SYSTEM_BG_COLOR
+    }
 
-skinparam rectangle<<System>> {
-  FontColor SYSTEM_FONT_COLOR
-  BorderColor INTERNAL_BORDER_COLOR
-  BackgroundColor SYSTEM_BG_COLOR
-}
+    skinparam frame<<System>> {
+      FontColor SYSTEM_FONT_COLOR
+      BorderColor INTERNAL_BORDER_COLOR
+      BackgroundColor SYSTEM_BG_COLOR
+    }
 
-skinparam frame<<External System>> {
-  FontColor SYSTEM_FONT_COLOR
-  BorderColor EXTERNAL_SYSTEM_BORDER_COLOR
-  BackgroundColor EXTERNAL_SYSTEM_BG_COLOR
-}
+    skinparam frame<<Internal>> {
+      FontColor SYSTEM_FONT_COLOR
+      BorderColor INTERNAL_BORDER_COLOR
+      BackgroundColor SYSTEM_BG_COLOR
+    }
 
-skinparam frame<<Internal System>> {
-  FontColor SYSTEM_FONT_COLOR
-  BorderColor INTERNAL_BORDER_COLOR
-  BackgroundColor SYSTEM_BG_COLOR
-}
+    ' External
+    skinparam frame<<External System>> {
+      FontColor SYSTEM_FONT_COLOR
+      BorderColor EXTERNAL_SYSTEM_BORDER_COLOR
+      BackgroundColor EXTERNAL_SYSTEM_BG_COLOR
+    }
 
-skinparam frame<<System>> {
-  FontColor SYSTEM_FONT_COLOR
-  BorderColor INTERNAL_BORDER_COLOR
-  BackgroundColor SYSTEM_BG_COLOR
-}
+    skinparam frame<<External>> {
+      FontColor SYSTEM_FONT_COLOR
+      BorderColor EXTERNAL_SYSTEM_BORDER_COLOR
+      BackgroundColor EXTERNAL_SYSTEM_BG_COLOR
+    }
+
+  ' PlantUML Rectangle skinning
+    ' Internal
+    skinparam rectangle<<Internal System>> {
+      FontColor SYSTEM_FONT_COLOR
+      BorderColor INTERNAL_BORDER_COLOR
+      BackgroundColor SYSTEM_BG_COLOR
+    }
+
+    skinparam rectangle<<System>> {
+      FontColor SYSTEM_FONT_COLOR
+      BorderColor INTERNAL_BORDER_COLOR
+      BackgroundColor SYSTEM_BG_COLOR
+    }
+
+    ' External
+    skinparam rectangle<<External System>> {
+      FontColor SYSTEM_FONT_COLOR
+      BorderColor EXTERNAL_SYSTEM_BORDER_COLOR
+      BackgroundColor EXTERNAL_SYSTEM_BG_COLOR
+    }
