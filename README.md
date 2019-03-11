@@ -36,7 +36,7 @@ Just below `@startuml`, and then use the following components with the specified
 | Containers | `rectangle` | `<<Internal Container>>` <br>or `<<Container>>` | `<<External Container>>` |
 | Component | `rectangle` | `<<Internal Component>>` <br> or `<<Component>>` | `<<External Component>>` |
 | Database | `database` | `<<Internal Database>>` <br> or `<<Internal>>` |  `<<External Database>>` <br> or `<<External>>` |
-| Queue | `queue` | `<<Internal Queue>>` <br> or `<<Internal>>` |  `<<External Queue>>` <br> or `<<Queue>>` |
+| Queue | `queue` | `<<Internal Queue>>` <br> or `<<Internal>>` |  `<<External Queue>>` <br> or `<<External>>` |
 | Expanded systems, <br> containers and components | `frame`, <br> `component`, <br> or `rectangle` <br> according to your need | `<Expanded>` | `<Expanded>` |
 
 ## Examples

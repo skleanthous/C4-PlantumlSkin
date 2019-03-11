@@ -15,6 +15,7 @@ skinparam frame<<Expanded>> {
   FontColor ATTRIBUTE_AND_EXPANDED_SYSTEM_COLOR
   BorderColor EXTERNAL_BORDER_COLOR
   BackgroundColor EXPENDED_SYSTEM_BACKGROUND_COLOR
+  BorderStyle dashed
 }
 
 skinparam component<<Expanded>> {
