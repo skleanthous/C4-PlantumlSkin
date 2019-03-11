@@ -9,7 +9,7 @@ actor customer <<Internal Person>>
 Rectangle mainframe_system <<External System>>
 Rectangle email_system <<External System>>
 
-frame internent_banking <<Expanded Container>> {
+rectangle internent_banking <<Expanded>> {
     component web_application <<Internal Container>>
     component sp_application <<Internal Container>>
     component mobile_application <<Internal Container>>

@@ -2,40 +2,60 @@
 !includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/general/colors.puml
 !endif
 
-' Components
+' Containers
 ' ##################################
-skinparam component<<External Container>> {
-  FontColor CONTAINER_FONT_COLOR
-  BorderColor EXTERNAL_CONTAINER_BORDER_COLOR
-  BackgroundColor EXTERNAL_CONTAINER_BG_COLOR
-}
 
-skinparam component<<Internal Container>> {
-  FontColor CONTAINER_FONT_COLOR
-  BorderColor CONTAINER_BORDER_COLOR
-  BackgroundColor CONTAINER_BG_COLOR
-}
+  ' PlantUML Component skinning
+    ' Internal
+    skinparam component<<Internal Container>> {
+      FontColor CONTAINER_FONT_COLOR
+      BorderColor CONTAINER_BORDER_COLOR
+      BackgroundColor CONTAINER_BG_COLOR
+    }
 
-skinparam component<<Container>> {
-  FontColor CONTAINER_FONT_COLOR
-  BorderColor CONTAINER_BORDER_COLOR
-  BackgroundColor CONTAINER_BG_COLOR
-}
+    skinparam component<<Internal>> {
+      FontColor CONTAINER_FONT_COLOR
+      BorderColor CONTAINER_BORDER_COLOR
+      BackgroundColor CONTAINER_BG_COLOR
+    }
 
-skinparam rectangle<<External Container>> {
-  FontColor CONTAINER_FONT_COLOR
-  BorderColor EXTERNAL_CONTAINER_BORDER_COLOR
-  BackgroundColor EXTERNAL_CONTAINER_BG_COLOR
-}
+    skinparam component<<Container>> {
+      FontColor CONTAINER_FONT_COLOR
+      BorderColor CONTAINER_BORDER_COLOR
+      BackgroundColor CONTAINER_BG_COLOR
+    }
 
-skinparam rectangle<<Internal Container>> {
-  FontColor CONTAINER_FONT_COLOR
-  BorderColor CONTAINER_BORDER_COLOR
-  BackgroundColor CONTAINER_BG_COLOR
-}
+    ' External
+    skinparam component<<External Container>> {
+      FontColor CONTAINER_FONT_COLOR
+      BorderColor EXTERNAL_CONTAINER_BORDER_COLOR
+      BackgroundColor EXTERNAL_CONTAINER_BG_COLOR
+    }
 
-skinparam rectangle<<Container>> {
-  FontColor CONTAINER_FONT_COLOR
-  BorderColor CONTAINER_BORDER_COLOR
-  BackgroundColor CONTAINER_BG_COLOR
-}
+    skinparam component<<External>> {
+      FontColor CONTAINER_FONT_COLOR
+      BorderColor EXTERNAL_CONTAINER_BORDER_COLOR
+      BackgroundColor EXTERNAL_CONTAINER_BG_COLOR
+    }
+
+  ' PlantUML Rectangle skinning
+
+    'Internal
+    skinparam rectangle<<Internal Container>> {
+      FontColor CONTAINER_FONT_COLOR
+      BorderColor CONTAINER_BORDER_COLOR
+      BackgroundColor CONTAINER_BG_COLOR
+    }
+
+    skinparam rectangle<<Container>> {
+      FontColor CONTAINER_FONT_COLOR
+      BorderColor CONTAINER_BORDER_COLOR
+      BackgroundColor CONTAINER_BG_COLOR
+    }
+
+    ' External
+    skinparam rectangle<<External Container>> {
+      FontColor CONTAINER_FONT_COLOR
+      BorderColor EXTERNAL_CONTAINER_BORDER_COLOR
+      BackgroundColor EXTERNAL_CONTAINER_BG_COLOR
+    }
