@@ -12,8 +12,8 @@ Before you start, you need to be familiar at minimum with:
 First of all you need to have plantuml up and running. For this you have multiple options (all of which will work with this):
 
 1. [Local installation](http://plantuml.com/starting)
-1. [Free online editor](http://www.plantuml.com/plantuml/uml/5Oqn3W8X44LxJw47a6csijh42vXu0XOcGdOO2FCdNb-iNbxptcw84zxaSgkQn3Fxb6i1XZs8Plo6JqNnmurdwWfMXDGRsIaS5QMxqNExlsJ9ghpFgjIYWISTNYLJTmm7fIsC_sLdpOi_) <-- This is ready for you to start creating C4 models!!
-1. [Another free online editor](https://www.planttext.com/)
+1. [Free online editor (PlantText)](https://www.planttext.com/?text=5Osn3SCm30HxJv4C4B5nbSf05WYG2MI9i0XJb22ISCQFyjrTSR-fnM5UURcJ9FQCFlXMpBe-0KQyma5MV7V5aPeOYeNKAkZ96CLASuNN-dZpX5dvd2HGeneEs9quGtFhRf3MqFylaRbTbRuanpAteUIfVm00) <-- This is ready for you to start creating C4 models!!
+1. [Free online editor from PlantUML](http://www.plantuml.com/plantuml/uml/5Oqn3W8X44LxJw47a6csijh42vXu0XOcGdOO2FCdNb-iNbxptcw84zxaSgkQn3Fxb6i1XZs8Plo6JqNnmurdwWfMXDGRsIaS5QMxqNExlsJ9ghpFgjIYWISTNYLJTmm7fIsC_sLdpOi_) <-- This is ready for you to start creating C4 models!!
 1. [VisualStudio Code Plugin](https://github.com/qjebbs/vscode-plantuml): This plugin allows you to "embed" diagrams in your markdown files, which is the best of all worlds in my opinion, and is hence really recommended.
 
 Once you have something running (or just went to planttext online editor), you can start using plantuml to create text-driven models and diagrams.
