@@ -1,7 +1,7 @@
 @startuml
 !define NO_LEGEND
 
-!includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/c4.puml
+!include ../../src/c4.puml
 
 component InternalComponent <<Internal Container>>
 component ExternalComponent <<External Container>>
@@ -9,8 +9,16 @@ component ExternalComponent <<External Container>>
 rectangle InternalRectangle <<Internal Container>>
 rectangle ExternalRectangle <<External Container>>
 
+interface InternalInterface <<Internal Container>>
+interface ExternalInterface <<External Container>>
+
 InternalComponent -right-> ExternalComponent
-InternalComponent -[hidden]down-> InternalRectangle
 InternalRectangle -right-> ExternalRectangle
+InternalInterface --right-> ExternalInterface
+
+' Position hints
+InternalComponent -[hidden]down-> InternalRectangle
+InternalRectangle -[hidden]down-> InternalInterface
+ExternalRectangle -[hidden]down-> ExternalInterface
 
 @enduml

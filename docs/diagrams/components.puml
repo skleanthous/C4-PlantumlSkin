@@ -1,11 +1,17 @@
 @startuml
 !define NO_LEGEND
 
-!includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/c4.puml
+!include ../../src/c4.puml
 
 rectangle Internal <<Internal Component>>
 rectangle External <<External Component>>
+interface Internal <<Internal Component>> as InternalInterface
+interface External <<External Component>> as ExternalInterface
 
 Internal -right-> External
+InternalInterface -right-> ExternalInterface
 
+'Positioning hings
+Internal -[hidden]down-> InternalInterface
+External -[hidden]down-> ExternalInterface
 @enduml

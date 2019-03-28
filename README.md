@@ -64,6 +64,12 @@ Reproduced (as closely as possible from diagrams from [the official C4 model web
 
     ## _**!!!TODO!!!**_
 
+## Updates
+
+- [2019-03-28] : Added support to skin interfaces in systems, containers and components.
+- [2019-03-28] : Fixed bug in legent titles
+- [Initial release] : Skinning support for internal and external, systems, container, components and users. Includes skinning for databases and queues. Also, provides support for expanded items (see [container diagram](#container-diagram) for an expanded system)
+
 ## Brief description
 ---
 
@@ -155,15 +161,22 @@ All that is needed to start is to add the following line:
 
     !includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/c4.puml
 
-    rectangle Internal <<Internal System>>
-    frame AnotherInternal <<System>>
-    rectangle External <<External System>>
-    frame AnotherExternal <<External System>>
+    rectangle InternalRectangle <<Internal System>>
+    rectangle ExternalRectangle <<External System>>
+    frame InternalFrame <<System>>
+    frame ExternalFrame <<External System>>
+    interface InternalInterface <<System>>
+    interface ExternalInterface <<External System>>
 
-    Internal -right-> External
-    Internal -[hidden]down-> AnotherInternal
-    AnotherInternal -right-> AnotherExternal
+    InternalRectangle -right-> ExternalRectangle
+    InternalFrame -right-> ExternalFrame
+    InternalInterface -right-> ExternalInterface
 
+
+    'Positioning hints
+    InternalRectangle -[hidden]down-> InternalFrame
+    InternalFrame -[hidden]down-> InternalInterface
+    ExternalFrame -[hidden]down-> ExternalInterface
     @enduml
     ```
 
@@ -193,10 +206,17 @@ All that is needed to start is to add the following line:
     rectangle InternalRectangle <<Internal Container>>
     rectangle ExternalRectangle <<External Container>>
 
-    InternalComponent -right-> ExternalComponent
-    InternalComponent -[hidden]down-> InternalRectangle
-    InternalRectangle -right-> ExternalRectangle
+    interface InternalInterface <<Internal Container>>
+    interface ExternalInterface <<External Container>>
 
+    InternalComponent -right-> ExternalComponent
+    InternalRectangle -right-> ExternalRectangle
+    InternalInterface --right-> ExternalInterface
+
+    ' Position hints
+    InternalComponent -[hidden]down-> InternalRectangle
+    InternalRectangle -[hidden]down-> InternalInterface
+    ExternalRectangle -[hidden]down-> ExternalInterface
     @enduml
     ```
 
@@ -222,8 +242,15 @@ All that is needed to start is to add the following line:
 
     rectangle Internal <<Internal Component>>
     rectangle External <<External Component>>
+    interface Internal <<Internal Component>> as InternalInterface
+    interface External <<External Component>> as ExternalInterface
 
     Internal -right-> External
+    InternalInterface -right-> ExternalInterface
+
+    'Positioning hings
+    Internal -[hidden]down-> InternalInterface
+    External -[hidden]down-> ExternalInterface
 
     @enduml
     ```
@@ -248,4 +275,8 @@ All that is needed to start is to add the following line:
 ## Inspiration \ Acknowledgements
 ---
 
-Basically the only acknowledgement is [C4-PlantUML](https://github.com/RicardoNiepel/C4-PlantUML) from [Ricardo Niepel](https://github.com/RicardoNiepel). This is a very good library to work with C4, but I wanted something much more native to plantuml. Specifically I wanted to be able to work with artifacts native to plantuml (`rectangle`, `queue`, `component`, etc.) instead of the "method"-like means that this library exposes.
+One major aknowledgment is [C4-PlantUML](https://github.com/RicardoNiepel/C4-PlantUML) from [Ricardo Niepel](https://github.com/RicardoNiepel). This is a very good library to work with C4, but I wanted something much more native to plantuml. Specifically I wanted to be able to work with artifacts native to plantuml (`rectangle`, `queue`, `component`, etc.) instead of the "method"-like means that this library exposes.
+
+Obviously a huge thank you to the awesome teams at PlantUml.
+
+Another aknowledgement goes to Simon Brown for the C4 model.

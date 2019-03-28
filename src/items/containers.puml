@@ -39,7 +39,6 @@
     }
 
   ' PlantUML Rectangle skinning
-
     'Internal
     skinparam rectangle<<Internal Container>> {
       FontColor CONTAINER_FONT_COLOR
@@ -56,6 +55,24 @@
     ' External
     skinparam rectangle<<External Container>> {
       FontColor CONTAINER_FONT_COLOR
+      BorderColor EXTERNAL_CONTAINER_BORDER_COLOR
+      BackgroundColor EXTERNAL_CONTAINER_BG_COLOR
+    }
+
+  ' PlantUML Interface skinning
+    'Internal
+    skinparam interface<<Internal Container>> {
+      BorderColor CONTAINER_BORDER_COLOR
+      BackgroundColor CONTAINER_BG_COLOR
+    }
+
+    skinparam interface<<Container>> {
+      BorderColor CONTAINER_BORDER_COLOR
+      BackgroundColor CONTAINER_BG_COLOR
+    }
+
+    ' External
+    skinparam interface<<External Container>> {
       BorderColor EXTERNAL_CONTAINER_BORDER_COLOR
       BackgroundColor EXTERNAL_CONTAINER_BG_COLOR
     }

@@ -58,3 +58,21 @@
       BorderColor EXTERNAL_SYSTEM_BORDER_COLOR
       BackgroundColor EXTERNAL_SYSTEM_BG_COLOR
     }
+
+  ' PlantUML Interface skinning
+    ' Internal
+    skinparam interface<<Internal System>> {
+      BorderColor INTERNAL_BORDER_COLOR
+      BackgroundColor SYSTEM_BG_COLOR
+    }
+
+    skinparam interface<<System>> {
+      BorderColor INTERNAL_BORDER_COLOR
+      BackgroundColor SYSTEM_BG_COLOR
+    }
+
+    ' External
+    skinparam interface<<External System>> {
+      BorderColor EXTERNAL_SYSTEM_BORDER_COLOR
+      BackgroundColor EXTERNAL_SYSTEM_BG_COLOR
+    }
