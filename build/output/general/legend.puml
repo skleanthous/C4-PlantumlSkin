@@ -7,7 +7,7 @@
 ' ##################################
 !ifndef NO_LEGEND
 legend right
-|= Active   |= Inactive |= Type     |
+|= Internal   |= External |= Type     |
 |<PERSON_BG_COLOR>|<EXTERNAL_PERSON_BG_COLOR>| person |
 |<SYSTEM_BG_COLOR>|<EXTERNAL_SYSTEM_BG_COLOR>| system |
 |<CONTAINER_BG_COLOR>|<EXTERNAL_CONTAINER_BG_COLOR>| container |
