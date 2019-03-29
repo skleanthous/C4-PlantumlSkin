@@ -66,6 +66,7 @@ Reproduced (as closely as possible from diagrams from [the official C4 model web
 
 ## Updates
 
+- [2019-03-29] : Added skinning to cloud. Either define "SKIN_CLOUD" or use `<<External>>` stereotype
 - [2019-03-28] : Added support to skin interfaces in systems, containers and components.
 - [2019-03-28] : Fixed bug in legent titles
 - [Initial release] : Skinning support for internal and external, systems, container, components and users. Includes skinning for databases and queues. Also, provides support for expanded items (see [container diagram](#container-diagram) for an expanded system)

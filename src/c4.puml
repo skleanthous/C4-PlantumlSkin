@@ -7,5 +7,6 @@
 !include /items/containers.puml
 !include /items/dbs.puml
 !include /items/expanded.puml
+!include /items/misc.puml
 !include /items/queues.puml
 !include /items/systems.puml
