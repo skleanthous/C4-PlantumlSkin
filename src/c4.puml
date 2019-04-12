@@ -10,3 +10,4 @@
 !include /items/misc.puml
 !include /items/queues.puml
 !include /items/systems.puml
+!include /items/sequence.puml

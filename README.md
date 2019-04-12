@@ -66,6 +66,7 @@ Reproduced (as closely as possible from diagrams from [the official C4 model web
 
 ## Updates
 
+- [2019-04-12] : Added skinning for sequence diagrams. Add `!define SKIN_SEQUENCE_DIAGRAM` before the include statement. See [a short sample](./sample/seuqnce.puml)
 - [2019-03-29] : Added skinning to cloud. Either define "SKIN_CLOUD" or use `<<External>>` stereotype
 - [2019-03-28] : Added support to skin interfaces in systems, containers and components.
 - [2019-03-28] : Fixed bug in legent titles

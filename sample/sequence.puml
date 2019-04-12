@@ -1,0 +1,23 @@
+@startuml
+!define SKIN_SEQUENCE_DIAGRAM
+!define NO_LEGEND
+!include ../src/c4.puml
+
+actor Actor <<External>>
+participant Participant<<Internal>>
+boundary Boundary <<Internal>>
+control Control <<Internal>>
+control ControlDefault
+entity Entity <<Internal>>
+entity EntityDefault
+entity EntityExternal <<External>>
+database Db <<Internal>>
+collections Collection <<Internal>>
+
+Actor -> Participant : tell
+activate Participant
+Participant -> Boundary : tell
+Participant -> Actor : end
+deactivate Participant
+
+@enduml
