@@ -35,11 +35,13 @@ skinparam entity {
 }
 skinparam collections {
       FontColor SYSTEM_FONT_COLOR
+      StereotypeFontColor SYSTEM_FONT_COLOR
       BackgroundColor SYSTEM_BG_COLOR
       BorderColor SEQUENCE_ITEMS_BORDER_COLOR
 }
 skinparam participant {
       FontColor SYSTEM_FONT_COLOR
+      StereotypeFontColor SYSTEM_FONT_COLOR
       BackgroundColor SYSTEM_BG_COLOR
       BorderColor SEQUENCE_ITEMS_BORDER_COLOR
 }
