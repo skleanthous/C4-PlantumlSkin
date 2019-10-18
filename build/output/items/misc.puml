@@ -10,12 +10,14 @@
     !ifdef SKIN_CLOUD
     skinparam cloud {
       FontColor SYSTEM_FONT_COLOR
+      StereotypeFontColor SYSTEM_FONT_COLOR
       BorderColor EXTERNAL_SYSTEM_BORDER_COLOR
       BackgroundColor EXTERNAL_SYSTEM_BG_COLOR
     }
     !else
     skinparam cloud<<External>> {
       FontColor SYSTEM_FONT_COLOR
+      StereotypeFontColor SYSTEM_FONT_COLOR
       BorderColor EXTERNAL_SYSTEM_BORDER_COLOR
       BackgroundColor EXTERNAL_SYSTEM_BG_COLOR
     }

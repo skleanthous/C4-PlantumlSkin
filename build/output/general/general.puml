@@ -7,4 +7,7 @@
 skinparam {
   shadowing true
   arrowColor GENERAL_BORDER_COLOR
+  defaultTextAlignment center
+  wrapWidth 200
+  maxMessageSize 150
 }

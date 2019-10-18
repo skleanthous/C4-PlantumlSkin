@@ -8,12 +8,14 @@
     'Internal
     skinparam rectangle<<Internal Component>> {
       FontColor COMPONENT_FONT_COLOR
+      StereotypeFontColor COMPONENT_FONT_COLOR
       BorderColor INTERNAL_BORDER_COLOR
       BackgroundColor COMPONENT_BG_COLOR
     }
 
     skinparam rectangle<<Component>> {
       FontColor COMPONENT_FONT_COLOR
+      StereotypeFontColor COMPONENT_FONT_COLOR
       BorderColor INTERNAL_BORDER_COLOR
       BackgroundColor COMPONENT_BG_COLOR
     }
@@ -21,6 +23,7 @@
     'External
     skinparam rectangle<<External Component>> {
       FontColor EXTERNAL_COMPONENT_FONT_COLOR
+      StereotypeFontColor EXTERNAL_COMPONENT_FONT_COLOR
       BorderColor EXTERNAL_BORDER_COLOR
       BackgroundColor EXTERNAL_COMPONENT_BG_COLOR
     }

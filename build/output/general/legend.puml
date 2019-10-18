@@ -6,6 +6,7 @@
 ' Legend
 ' ##################################
 !ifndef NO_LEGEND
+hide stereotype
 legend right
 |= Internal   |= External |= Type     |
 |<PERSON_BG_COLOR>|<EXTERNAL_PERSON_BG_COLOR>| person |
@@ -15,6 +16,6 @@ legend right
 endlegend
 !endif
 
-!ifndef ENABLE_STEREOTYPES
-hide stereotype
+!ifdef ENABLE_STEREOTYPES
+show stereotype
 !endif
