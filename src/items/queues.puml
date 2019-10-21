@@ -8,22 +8,26 @@ skinparam queue<<Internal>> {
   BackgroundColor SYSTEM_BG_COLOR
   BorderColor INTERNAL_BORDER_COLOR
   FontColor FONT_COLOR
+  StereotypeFontColor FONT_COLOR
 }
 
 skinparam queue<<External>> {
   BackgroundColor EXTERNAL_SYSTEM_BG_COLOR
   BorderColor EXTERNAL_BORDER_COLOR
   FontColor FONT_COLOR
+  StereotypeFontColor FONT_COLOR
 }
 
 skinparam queue<<Internal Queue>> {
   BackgroundColor SYSTEM_BG_COLOR
   BorderColor INTERNAL_BORDER_COLOR
   FontColor FONT_COLOR
+  StereotypeFontColor FONT_COLOR
 }
 
 skinparam queue<<External Queue>> {
   BackgroundColor EXTERNAL_SYSTEM_BG_COLOR
   BorderColor EXTERNAL_BORDER_COLOR
   FontColor FONT_COLOR
+  StereotypeFontColor FONT_COLOR
 }
