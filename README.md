@@ -14,7 +14,7 @@ First of all you need to have plantuml up and running. For this you have multipl
 1. [Local installation](http://plantuml.com/starting)
 1. [Free online editor (PlantText)](https://www.planttext.com/?text=5Osn3SCm30HxJv4C4B5nbSf05WYG2MI9i0XJb22ISCQFyjrTSR-fnM5UURcJ9FQCFlXMpBe-0KQyma5MV7V5aPeOYeNKAkZ96CLASuNN-dZpX5dvd2HGeneEs9quGtFhRf3MqFylaRbTbRuanpAteUIfVm00) <-- This is ready for you to start creating C4 models!!
 1. [Free online editor from PlantUML](http://www.plantuml.com/plantuml/uml/5Oqn3W8X44LxJw47a6csijh42vXu0XOcGdOO2FCdNb-iNbxptcw84zxaSgkQn3Fxb6i1XZs8Plo6JqNnmurdwWfMXDGRsIaS5QMxqNExlsJ9ghpFgjIYWISTNYLJTmm7fIsC_sLdpOi_) <-- This is ready for you to start creating C4 models!!
-1. [VisualStudio Code Plugin](https://github.com/qjebbs/vscode-plantuml): This plugin allows you to "embed" diagrams in your markdown files, which is the best of all worlds in my opinion, and is hence really recommended.
+1. [VisualStudio Code Plugin](https://github.com/qjebbs/vscode-plantuml): This plugin allows you to "embed" diagrams in your markdown files, which is the best of all worlds in my opinion, and hence really recommended.
 
 Once you have something running (or just went to planttext online editor), you can start using plantuml to create text-driven models and diagrams.
 
@@ -66,10 +66,10 @@ Reproduced (as closely as possible from diagrams from [the official C4 model web
 
 ## Updates
 
-- [2019-04-12] : Added skinning for sequence diagrams. Add `!define SKIN_SEQUENCE_DIAGRAM` before the include statement. See [a short sample](./sample/seuqnce.puml)
+- [2019-04-12] : Added skinning for sequence diagrams. Add `!define SKIN_SEQUENCE_DIAGRAM` before the include statement. See [a short sample](./sample/sequence.puml)
 - [2019-03-29] : Added skinning to cloud. Either define "SKIN_CLOUD" or use `<<External>>` stereotype
 - [2019-03-28] : Added support to skin interfaces in systems, containers and components.
-- [2019-03-28] : Fixed bug in legent titles
+- [2019-03-28] : Fixed bug in legend titles
 - [Initial release] : Skinning support for internal and external, systems, container, components and users. Includes skinning for databases and queues. Also, provides support for expanded items (see [container diagram](#container-diagram) for an expanded system)
 
 ## Brief description
@@ -77,14 +77,14 @@ Reproduced (as closely as possible from diagrams from [the official C4 model web
 
 This project will help you use the awesome plantuml tool to create C4 diagrams for documenting architecture.
 
-C4 defines a set of diagrams (core and supplamentary) that are designed to document architecture in a way that is easy to understand and communicate.
+C4 defines a set of diagrams (core and supplementary) that are designed to document architecture in a way that is easy to understand and communicate.
 
 PlantUml is a uniquely pleasant-to-use tool to create diagrams from text. The fact that this is a text-driven tool opens up a lot of previously impossible scenarios:
 
 1. It is a *pleasure* to edit
 1. You don't need special tooling
 1. You can keep your domain models side-by-side with your code
-1. You can embedd models in your markdown documents in almost all major editors
+1. You can embed models in your markdown documents in almost all major editors
 1. Did I mention that it is an absolute pleasure to work with plantuml?
 
 The only real disadvantage to plantuml is that positioning can sometimes be a bit hard.
@@ -95,7 +95,6 @@ This tool allows you to use stereotypes to skin your diagram to be close to what
 1. Container diagram
 1. Component diagram
 1. System Landscape diagram
-1. Dynamic diagram
 1. Dynamic diagram
 
 ## Instructions
@@ -147,7 +146,7 @@ All that is needed to start is to add the following line:
 
 3. #### Represent C4 Systems --> with PlantUml Rectangles and Frames
 
-    C4 Systems can be reprensented using PlantUml rectangles and frames. In both cases the stereotypes that could be used are:
+    C4 Systems can be represented using PlantUml rectangles and frames. In both cases the stereotypes that could be used are:
 
     > **NOTE**: the simplicity of rectangles makes them really useful if you want to avoid the connotations implied by UML artifacts, so they are used to represent other C4 artifacts too
 
@@ -188,7 +187,7 @@ All that is needed to start is to add the following line:
 
 4. #### Represent C4 Containers --> with PlantUml Rectangle and Components
 
-    C4 containers can be repesented by using plantuml rectangles  (and not C4 components which is a bit confusing), which are useful to be shown normally on `System Context`, `Container` and `System Landscape` diagrams. The supported stereotypes are:
+    C4 containers can be represented by using plantuml rectangles (and not C4 components which is a bit confusing), which are useful to be shown normally on `System Context`, `Container` and `System Landscape` diagrams. The supported stereotypes are:
     
     - `<<Internal Container>>`
     - `<<Container>>` (an alias to `Internal Container`)
@@ -228,7 +227,7 @@ All that is needed to start is to add the following line:
 
 5. #### Represent C4 components --> with PlantUml rectangles
 
-    C4 components can currently only be represented by plantuml rectangles. The are only really usesful in `Component` C4 diagrams, but obviously really important. The stereotypes used 
+    C4 components can currently only be represented by plantuml rectangles. The are only really useful in `Component` C4 diagrams, but obviously really important. The stereotypes used are:
 
     - `<<Internal Component>>`
     - `<<Component>>` (an alias to `<<Internal Component>>`)
@@ -274,11 +273,11 @@ All that is needed to start is to add the following line:
 1. Complete examples
 1. Add skinning for C4 Code diagrams 
 
-## Inspiration \ Acknowledgements
+## Inspiration / Acknowledgements
 ---
 
-One major aknowledgment is [C4-PlantUML](https://github.com/RicardoNiepel/C4-PlantUML) from [Ricardo Niepel](https://github.com/RicardoNiepel). This is a very good library to work with C4, but I wanted something much more native to plantuml. Specifically I wanted to be able to work with artifacts native to plantuml (`rectangle`, `queue`, `component`, etc.) instead of the "method"-like means that this library exposes.
+One major acknowledgment is [C4-PlantUML](https://github.com/RicardoNiepel/C4-PlantUML) from [Ricardo Niepel](https://github.com/RicardoNiepel). This is a very good library to work with C4, but I wanted something much more native to plantuml. Specifically I wanted to be able to work with artifacts native to plantuml (`rectangle`, `queue`, `component`, etc.) instead of the "method"-like means that this library exposes.
 
 Obviously a huge thank you to the awesome teams at PlantUml.
 
-Another aknowledgement goes to Simon Brown for the C4 model.
+Another acknowledgement goes to Simon Brown for the C4 model.
