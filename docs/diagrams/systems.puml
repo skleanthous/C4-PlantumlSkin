@@ -5,19 +5,20 @@
 
 rectangle InternalRectangle <<Internal System>>
 rectangle ExternalRectangle <<External System>>
+
 frame InternalFrame <<System>>
 frame ExternalFrame <<External System>>
+
 interface InternalInterface <<System>>
 interface ExternalInterface <<External System>>
 
-InternalRectangle -right-> ExternalRectangle
-InternalFrame -right-> ExternalFrame
-InternalInterface -right-> ExternalInterface
+InternalRectangle  -right->  ExternalRectangle
+InternalFrame      -right->  ExternalFrame
+InternalInterface  -right->  ExternalInterface
 
-
-'Positioning hints
+' Positioning hints (down can be abbreviated to D etc)
 InternalRectangle -[hidden]down-> InternalFrame
-InternalFrame -[hidden]down-> InternalInterface
-ExternalFrame -[hidden]down-> ExternalInterface
+InternalFrame     -[hidden]down-> InternalInterface
+ExternalFrame     -[hidden]down-> ExternalInterface
 
 @enduml

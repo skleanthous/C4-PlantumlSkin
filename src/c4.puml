@@ -1,13 +1,13 @@
-!include /general/general.puml
-!include /general/legend.puml
-!include /general/notes.puml
+!include general/general.puml
+!include general/legend.puml
+!include general/notes.puml
 
-!include /items/actors.puml
-!include /items/components.puml
-!include /items/containers.puml
-!include /items/dbs.puml
-!include /items/expanded.puml
-!include /items/misc.puml
-!include /items/queues.puml
-!include /items/systems.puml
-!include /items/sequence.puml
+!include items/actors.puml
+!include items/components.puml
+!include items/containers.puml
+!include items/dbs.puml
+!include items/expanded.puml
+!include items/misc.puml
+!include items/queues.puml
+!include items/systems.puml
+!include items/sequence.puml
