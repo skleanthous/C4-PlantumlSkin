@@ -5,13 +5,13 @@
 
 rectangle Internal <<Internal Component>>
 rectangle External <<External Component>>
-interface Internal <<Internal Component>> as InternalInterface
-interface External <<External Component>> as ExternalInterface
+interface Internal <<Internal Component>> as IInternal
+interface External <<External Component>> as IExternal
 
-Internal -right-> External
-InternalInterface -right-> ExternalInterface
+Internal          -right-> External
+IInternal         -right-> IExternal
 
-'Positioning hings
-Internal -[hidden]down-> InternalInterface
-External -[hidden]down-> ExternalInterface
+'Positioning hints
+Internal   -[hidden]down-> IInternal
+External   -[hidden]down-> IExternal
 @enduml

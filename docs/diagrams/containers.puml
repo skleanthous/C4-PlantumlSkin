@@ -1,5 +1,5 @@
 @startuml
-!define NO_LEGEND
+'!define NO_LEGEND
 
 !include ../../src/c4.puml
 
@@ -12,11 +12,11 @@ rectangle ExternalRectangle <<External Container>>
 interface InternalInterface <<Internal Container>>
 interface ExternalInterface <<External Container>>
 
-InternalComponent -right-> ExternalComponent
-InternalRectangle -right-> ExternalRectangle
+InternalComponent  -right-> ExternalComponent
+InternalRectangle  -right-> ExternalRectangle
 InternalInterface --right-> ExternalInterface
 
-' Position hints
+' Position hints (down can be abbreviated to D etc)
 InternalComponent -[hidden]down-> InternalRectangle
 InternalRectangle -[hidden]down-> InternalInterface
 ExternalRectangle -[hidden]down-> ExternalInterface

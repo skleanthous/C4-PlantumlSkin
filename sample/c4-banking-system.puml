@@ -3,17 +3,18 @@
 
 title Banking system
 caption This is the Banking System example taken from https://c4model.com/
+
 rectangle email_system <<External System>> [
     **E-mail system**
 
-    The inernal Microsoft Exchange
+    The internal Microsoft Exchange
     e-mail system
 ]
 
 together {
     actor "Personal Banking \nCustomer" <<Internal Person>> as customer
 
-    rectangle internet_banking <<Internal System>> [
+    rectangle internet_banking <<System>> [
         **Internet Banking System**
 
         Allows customers to view
@@ -21,7 +22,7 @@ together {
         accounts and make payments
     ]
 
-    rectangle mainframe_banking <<External System>> [
+    rectangle mfb <<External System>> [
         **Mainframe Banking System**
 
         Allows customers to view
@@ -30,10 +31,10 @@ together {
     ]
 }
 
-customer .down.> internet_banking : uses
-internet_banking .down.> mainframe_banking : uses
-internet_banking .right.> email_system : send e-mails\nusing
+customer          .down.> internet_banking  : uses
+internet_banking  .down.> mfb               : uses
+internet_banking .right.> email_system      : send e-mails\nusing
 
-email_system ..> customer : send e-mails to
+email_system          ..> customer          : send e-mails to
 
 @enduml

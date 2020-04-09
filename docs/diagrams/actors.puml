@@ -1,15 +1,14 @@
 @startuml
 !define NO_LEGEND
-
 !includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/c4.puml
 
-actor Internal <<Internal>>
-actor External <<External>>
-actor InternalPerson <<Internal Person>>
-actor ExternalPerson <<External Person>>
+actor Internal          <<Internal>>
+actor External          <<External>>
+actor InternalPerson    <<Internal Person>>
+actor ExternalPerson    <<External Person>>
 
-External -down-> Internal
-Internal -right-> InternalPerson
-InternalPerson -up-> ExternalPerson
+External       -down->  Internal
+Internal       -right-> InternalPerson
+InternalPerson -up->    ExternalPerson
 
 @end
