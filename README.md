@@ -105,8 +105,7 @@ All that is needed to start is to add the following line:
 
 1. ### Stereotypes and Legend
 
-    As mentioned above, the way the artifacts get C4 styling is through the use of Plantuml `<<stereotypes>>`. Currently stereotype names are not emitted; instead, a legend is emited at the bottom right. At this time it cannot be turned off.
-
+    As mentioned above, the way the artifacts get C4 styling is through the use of Plantuml `<<stereotypes>>`. Currently stereotype names are not emitted; instead, a legend is emited at the bottom right. To turn it off, add `!define NO_LEGEND` before the import, like in [this example(https://www.planttext.com/?text=TP91JyCm38Nl-HNU2JXqkUo4gWc93JG9ZOaT4K9fuhNHKcTA70R_dcwexQQMtEBt_DbFoKDa5JZLJamCxYmXh5y_NvRFo_L2Y8abxPB151nKp8TuBsLGnsbfkKf5YXYq9qRYgVQrZ7k7YhZoASh7MRPnpQK1R_UMPAqYOv15iiv8d_YGMEhPz70QB09gLbGwX5L32wJSMrV9yxO6sv-6KS_d5_xbzz3Vrdg_s0LLz_2dyotFE_rFRljQUOHZJuITqZrhrLKkUBsjPLpQHhZ3s905MrQSpM6OKLm7EP-X_IoAuPuZrauKuWOsFbgsdYoLK3L98jmQVoJGYg10K4KHyCigHWFiOG78-cuaGFPUMMEGFaxDpR2hdKSI_EVlTxj-dx6UOPu79DDyiLy0).
 2. ### Represent C4 Person --> with Plantuml Actors
 
     There is support for two types of actors: Internal and external. The supported stereotypes are:
