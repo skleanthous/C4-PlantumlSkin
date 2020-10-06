@@ -98,7 +98,7 @@ All that is needed to start is to add the following line:
 !includeurl https://raw.githubusercontent.com/skleanthous/C4-PlantumlSkin/master/build/output/c4.puml
 ```
 
-> **NOTE**: The skin sets your diagram type as a PlatuUml _deployment diagram_. If you want to add some incompatible artifacts in your diagram, you'll need to add the following statement after the `!includeurl`
+> **NOTE**: The skin sets your diagram type as a Plantuml _deployment diagram_. If you want to add some incompatible artifacts in your diagram, you'll need to add the following statement after the `!includeurl`
 > ```plantumlcode
 > allowmixing
 > ```
